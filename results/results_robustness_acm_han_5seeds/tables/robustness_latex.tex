@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\caption{Robustness analysis of HeteroGuard-Unlearn on ACM-HAN.}
+\label{tab:robustness_acm_han}
+\begin{tabular}{lllrrrr}
+\toprule
+Group & Value & Attack & Poison ASR & Defense ASR & Defense Acc & Detection F1 \\
+\midrule
+inaccurate\\_detection\\_ratio & 0.5 & relation & 99.38$\pm$1.40 & 7.19$\pm$5.28 & 82.83$\pm$1.42 & 66.26$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 0.5 & uba & 98.59$\pm$2.37 & 6.72$\pm$5.65 & 83.70$\pm$2.93 & 66.26$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 0.5 & cba & 64.84$\pm$22.54 & 9.06$\pm$3.52 & 86.85$\pm$2.59 & 65.57$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 0.75 & relation & 99.38$\pm$1.40 & 5.31$\pm$2.10 & 83.70$\pm$3.10 & 85.26$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 0.75 & uba & 98.59$\pm$2.37 & 2.97$\pm$2.84 & 85.87$\pm$3.07 & 85.26$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 0.75 & cba & 64.84$\pm$22.54 & 11.41$\pm$2.51 & 86.63$\pm$1.66 & 86.11$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.0 & relation & 99.38$\pm$1.40 & 0.62$\pm$0.65 & 87.17$\pm$0.82 & 100.00$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.0 & uba & 98.59$\pm$2.37 & 1.09$\pm$0.70 & 87.83$\pm$1.52 & 100.00$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.0 & cba & 64.84$\pm$22.54 & 7.03$\pm$1.24 & 88.15$\pm$1.11 & 100.00$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.25 & relation & 99.38$\pm$1.40 & 1.25$\pm$0.89 & 86.30$\pm$0.71 & 88.98$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.25 & uba & 98.59$\pm$2.37 & 0.94$\pm$0.86 & 87.17$\pm$2.32 & 88.98$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.25 & cba & 64.84$\pm$22.54 & 6.25$\pm$1.99 & 88.59$\pm$1.39 & 89.13$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.5 & relation & 99.38$\pm$1.40 & 0.47$\pm$0.43 & 87.17$\pm$1.25 & 80.15$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.5 & uba & 98.59$\pm$2.37 & 0.78$\pm$0.55 & 86.74$\pm$0.91 & 80.15$\pm$0.00 \\
+inaccurate\\_detection\\_ratio & 1.5 & cba & 64.84$\pm$22.54 & 4.84$\pm$1.16 & 89.24$\pm$1.05 & 80.39$\pm$0.00 \\
+partial\\_detection\\_failure & 0 & relation & 99.38$\pm$1.40 & 0.62$\pm$0.65 & 87.17$\pm$0.82 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0 & uba & 98.59$\pm$2.37 & 1.09$\pm$0.70 & 87.83$\pm$1.52 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0 & cba & 64.84$\pm$22.54 & 7.03$\pm$1.24 & 88.15$\pm$1.11 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.1 & relation & 99.38$\pm$1.40 & 3.91$\pm$3.27 & 87.07$\pm$0.81 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.1 & uba & 98.59$\pm$2.37 & 5.47$\pm$1.46 & 87.39$\pm$2.25 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.1 & cba & 64.84$\pm$22.54 & 7.19$\pm$2.37 & 87.72$\pm$1.25 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.2 & relation & 99.38$\pm$1.40 & 4.84$\pm$3.80 & 86.20$\pm$0.49 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.2 & uba & 98.59$\pm$2.37 & 5.31$\pm$3.05 & 84.24$\pm$4.30 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.2 & cba & 64.84$\pm$22.54 & 7.34$\pm$1.62 & 87.50$\pm$1.63 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.3 & relation & 99.38$\pm$1.40 & 5.78$\pm$2.18 & 85.43$\pm$1.18 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.3 & uba & 98.59$\pm$2.37 & 5.00$\pm$4.64 & 84.57$\pm$2.48 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.3 & cba & 64.84$\pm$22.54 & 7.81$\pm$2.28 & 86.96$\pm$1.27 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.4 & relation & 99.38$\pm$1.40 & 7.66$\pm$2.17 & 84.89$\pm$0.97 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.4 & uba & 98.59$\pm$2.37 & 10.78$\pm$6.40 & 82.93$\pm$3.49 & 100.00$\pm$0.00 \\
+partial\\_detection\\_failure & 0.4 & cba & 64.84$\pm$22.54 & 8.91$\pm$2.04 & 86.52$\pm$1.24 & 100.00$\pm$0.00 \\
+adaptive\\_attack & low_feature & relation & 59.53$\pm$11.97 & 5.62$\pm$1.16 & 88.15$\pm$1.78 & 100.00$\pm$0.00 \\
+adaptive\\_attack & sparse_relation & relation & 66.41$\pm$10.04 & 6.09$\pm$1.69 & 86.63$\pm$1.06 & 100.00$\pm$0.00 \\
+adaptive\\_attack & stealthy_clean_label & clean_label & 47.19$\pm$30.74 & 5.78$\pm$1.31 & 84.13$\pm$1.60 & 100.00$\pm$0.00 \\
+\bottomrule
+\end{tabular}
+\end{table*}

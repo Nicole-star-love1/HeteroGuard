@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\caption{Defense comparison under six heterogeneous graph backdoor attacks on ACM-HAN.}
+\label{tab:defense_suite_acm_han}
+\begin{tabular}{lllrrrr}
+\toprule
+Attack & Defense & BA & Poison ASR & Defense ASR & Defense Acc & ASR Drop \\
+\midrule
+clean_label & HeteroGuard-Unlearn & 81.63$\pm$1.69 & 86.25$\pm$10.61 & 2.97$\pm$1.02 & 84.89$\pm$2.35 & 83.28$\pm$10.17 \\
+relation & HeteroGuard-Unlearn & 72.83$\pm$13.01 & 99.38$\pm$1.40 & 1.25$\pm$0.70 & 88.70$\pm$2.05 & 98.12$\pm$2.04 \\
+uba & HeteroGuard-Unlearn & 60.65$\pm$27.65 & 98.59$\pm$2.37 & 0.78$\pm$0.78 & 87.83$\pm$1.57 & 97.81$\pm$2.17 \\
+clean_label & HeteroGuard-Unlearn & 78.91$\pm$5.72 & 84.06$\pm$25.83 & 0.94$\pm$1.28 & 82.83$\pm$2.13 & 83.12$\pm$25.13 \\
+relation & HeteroGuard-Unlearn & 80.65$\pm$5.31 & 99.84$\pm$0.35 & 1.25$\pm$1.52 & 85.33$\pm$2.58 & 98.59$\pm$1.40 \\
+uba & HeteroGuard-Unlearn & 72.07$\pm$23.44 & 100.00$\pm$0.00 & 0.94$\pm$0.65 & 85.76$\pm$2.38 & 99.06$\pm$0.65 \\
+clean_label & HeteroGuard-Unlearn & 85.98$\pm$2.01 & 56.09$\pm$10.60 & 0.94$\pm$0.35 & 82.72$\pm$2.41 & 55.16$\pm$10.92 \\
+relation & HeteroGuard-Unlearn & 83.59$\pm$2.35 & 99.06$\pm$1.40 & 1.88$\pm$0.70 & 89.24$\pm$0.60 & 97.19$\pm$1.88 \\
+uba & HeteroGuard-Unlearn & 84.57$\pm$2.39 & 100.00$\pm$0.00 & 1.25$\pm$0.89 & 88.48$\pm$0.60 & 98.75$\pm$0.89 \\
+clean_label & HeteroGuard-Unlearn & 85.22$\pm$8.18 & 57.34$\pm$20.87 & 3.28$\pm$2.02 & 85.98$\pm$2.12 & 54.06$\pm$22.23 \\
+relation & HeteroGuard-Unlearn & 74.24$\pm$13.46 & 94.06$\pm$5.86 & 2.50$\pm$0.86 & 89.24$\pm$0.89 & 91.56$\pm$6.43 \\
+uba & HeteroGuard-Unlearn & 88.04$\pm$1.02 & 100.00$\pm$0.00 & 0.00$\pm$0.00 & 88.15$\pm$1.05 & 100.00$\pm$0.00 \\
+clean_label & HeteroGuard-Unlearn & 76.05$\pm$0.46 & 85.55$\pm$10.14 & 1.73$\pm$1.73 & 76.21$\pm$2.13 & 83.82$\pm$10.34 \\
+relation & HeteroGuard-Unlearn & 72.90$\pm$2.90 & 98.73$\pm$1.44 & 1.04$\pm$1.70 & 79.92$\pm$1.04 & 97.69$\pm$2.95 \\
+uba & HeteroGuard-Unlearn & 73.39$\pm$2.92 & 95.14$\pm$5.37 & 1.16$\pm$0.71 & 79.60$\pm$1.39 & 93.99$\pm$4.72 \\
+clean_label & HeteroGuard-Unlearn & 76.61$\pm$1.54 & 92.72$\pm$8.19 & 0.00$\pm$0.00 & 78.55$\pm$1.81 & 92.72$\pm$8.19 \\
+relation & HeteroGuard-Unlearn & 75.73$\pm$1.08 & 99.31$\pm$0.48 & 0.81$\pm$0.88 & 82.10$\pm$0.97 & 98.50$\pm$0.88 \\
+uba & HeteroGuard-Unlearn & 76.05$\pm$1.99 & 99.31$\pm$0.48 & 0.46$\pm$0.48 & 82.66$\pm$0.99 & 98.84$\pm$0.71 \\
+clean_label & HeteroGuard-Unlearn & 75.40$\pm$2.47 & 92.02$\pm$2.14 & 0.00$\pm$0.00 & 77.26$\pm$1.36 & 92.02$\pm$2.14 \\
+relation & HeteroGuard-Unlearn & 76.85$\pm$2.59 & 97.92$\pm$1.33 & 0.23$\pm$0.32 & 84.11$\pm$1.29 & 97.69$\pm$1.23 \\
+uba & HeteroGuard-Unlearn & 76.21$\pm$1.61 & 98.84$\pm$1.36 & 0.69$\pm$0.48 & 83.71$\pm$2.36 & 98.15$\pm$1.25 \\
+clean_label & HeteroGuard-Unlearn & 80.48$\pm$0.79 & 95.61$\pm$3.69 & 0.23$\pm$0.52 & 81.77$\pm$2.23 & 95.38$\pm$4.13 \\
+relation & HeteroGuard-Unlearn & 82.18$\pm$0.34 & 99.31$\pm$0.63 & 0.00$\pm$0.00 & 85.00$\pm$2.25 & 99.31$\pm$0.63 \\
+uba & HeteroGuard-Unlearn & 82.90$\pm$1.79 & 99.54$\pm$0.26 & 0.00$\pm$0.00 & 84.84$\pm$1.39 & 99.54$\pm$0.26 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,71 @@
+\begin{table*}[t]
+\centering
+\caption{Parameter sensitivity of HeteroGuard-Unlearn on ACM-HAN.}
+\label{tab:sensitivity_acm_han}
+\begin{tabular}{llrrrr}
+\toprule
+Group & Attack & Value & Poison ASR & Defense ASR & Defense Acc \\
+\midrule
+poison\\_rate & relation & 0.05 & 72.97$\pm$15.52 & 2.03$\pm$2.11 & 87.93$\pm$2.05 \\
+poison\\_rate & uba & 0.05 & 80.00$\pm$14.59 & 1.25$\pm$0.89 & 88.04$\pm$0.67 \\
+poison\\_rate & cba & 0.05 & 47.66$\pm$17.79 & 7.66$\pm$1.16 & 87.17$\pm$1.31 \\
+poison\\_rate & relation & 0.075 & 82.97$\pm$18.19 & 2.19$\pm$1.28 & 87.39$\pm$1.18 \\
+poison\\_rate & uba & 0.075 & 88.91$\pm$14.43 & 1.56$\pm$0.96 & 88.04$\pm$1.84 \\
+poison\\_rate & cba & 0.075 & 64.84$\pm$22.54 & 6.88$\pm$2.30 & 88.37$\pm$0.82 \\
+poison\\_rate & relation & 0.1 & 91.88$\pm$4.90 & 1.72$\pm$0.86 & 88.04$\pm$0.94 \\
+poison\\_rate & uba & 0.1 & 82.19$\pm$24.15 & 1.72$\pm$0.86 & 87.72$\pm$1.31 \\
+poison\\_rate & cba & 0.1 & 82.97$\pm$16.21 & 5.62$\pm$2.02 & 89.24$\pm$1.41 \\
+poison\\_rate & relation & 0.15 & 93.91$\pm$6.33 & 1.25$\pm$0.89 & 87.50$\pm$1.27 \\
+poison\\_rate & uba & 0.15 & 95.47$\pm$5.25 & 1.41$\pm$1.02 & 86.85$\pm$1.30 \\
+poison\\_rate & cba & 0.15 & 81.72$\pm$28.92 & 5.62$\pm$3.14 & 89.02$\pm$1.82 \\
+poison\\_rate & relation & 0.2 & 99.38$\pm$1.40 & 1.25$\pm$0.70 & 88.70$\pm$2.05 \\
+poison\\_rate & uba & 0.2 & 98.59$\pm$2.37 & 0.78$\pm$0.78 & 87.83$\pm$1.57 \\
+poison\\_rate & cba & 0.2 & 97.66$\pm$3.75 & 5.62$\pm$1.69 & 88.15$\pm$0.60 \\
+trigger\\_size & relation & 4.0 & 95.62$\pm$3.52 & 4.22$\pm$1.52 & 88.48$\pm$1.18 \\
+trigger\\_size & uba & 4.0 & 94.53$\pm$6.10 & 3.59$\pm$2.25 & 86.74$\pm$1.31 \\
+trigger\\_size & cba & 4.0 & 47.50$\pm$29.43 & 10.00$\pm$2.02 & 87.50$\pm$1.22 \\
+trigger\\_size & relation & 8.0 & 97.19$\pm$4.74 & 1.72$\pm$1.69 & 87.93$\pm$1.82 \\
+trigger\\_size & uba & 8.0 & 99.38$\pm$1.02 & 1.88$\pm$1.18 & 87.93$\pm$1.51 \\
+trigger\\_size & cba & 8.0 & 63.28$\pm$21.88 & 7.81$\pm$1.83 & 87.50$\pm$1.22 \\
+trigger\\_size & relation & 10.0 & 99.38$\pm$1.40 & 1.25$\pm$0.70 & 88.70$\pm$2.05 \\
+trigger\\_size & uba & 10.0 & 98.59$\pm$2.37 & 0.78$\pm$0.78 & 87.83$\pm$1.57 \\
+trigger\\_size & cba & 10.0 & 67.97$\pm$19.70 & 7.19$\pm$2.17 & 87.72$\pm$1.06 \\
+trigger\\_size & relation & 12.0 & 95.62$\pm$6.60 & 1.56$\pm$1.24 & 87.61$\pm$0.71 \\
+trigger\\_size & uba & 12.0 & 99.53$\pm$1.05 & 0.78$\pm$0.55 & 87.50$\pm$1.49 \\
+trigger\\_size & cba & 12.0 & 64.84$\pm$22.54 & 6.88$\pm$2.30 & 88.37$\pm$0.82 \\
+trigger\\_size & relation & 16.0 & 91.41$\pm$17.92 & 0.94$\pm$1.02 & 88.48$\pm$1.11 \\
+trigger\\_size & uba & 16.0 & 92.19$\pm$11.17 & 0.62$\pm$0.35 & 88.48$\pm$1.41 \\
+trigger\\_size & cba & 16.0 & 64.53$\pm$29.92 & 5.62$\pm$1.40 & 88.37$\pm$1.19 \\
+unlearn\\_lambda & relation & 0.0 & 99.38$\pm$1.40 & 2.97$\pm$1.28 & 88.70$\pm$1.94 \\
+unlearn\\_lambda & uba & 0.0 & 98.59$\pm$2.37 & 3.44$\pm$1.42 & 87.28$\pm$1.94 \\
+unlearn\\_lambda & cba & 0.0 & 64.84$\pm$22.54 & 6.56$\pm$1.88 & 87.93$\pm$1.11 \\
+unlearn\\_lambda & relation & 0.25 & 99.38$\pm$1.40 & 0.94$\pm$0.35 & 87.93$\pm$1.30 \\
+unlearn\\_lambda & uba & 0.25 & 98.59$\pm$2.37 & 0.94$\pm$0.65 & 87.28$\pm$1.36 \\
+unlearn\\_lambda & cba & 0.25 & 64.84$\pm$22.54 & 5.94$\pm$0.89 & 87.50$\pm$1.02 \\
+unlearn\\_lambda & relation & 0.5 & 99.38$\pm$1.40 & 1.09$\pm$1.31 & 87.61$\pm$0.97 \\
+unlearn\\_lambda & uba & 0.5 & 98.59$\pm$2.37 & 2.81$\pm$2.25 & 87.61$\pm$0.71 \\
+unlearn\\_lambda & cba & 0.5 & 64.84$\pm$22.54 & 7.34$\pm$1.05 & 88.59$\pm$0.67 \\
+unlearn\\_lambda & relation & 1.0 & 99.38$\pm$1.40 & 1.25$\pm$0.70 & 88.70$\pm$2.05 \\
+unlearn\\_lambda & uba & 1.0 & 98.59$\pm$2.37 & 0.78$\pm$0.78 & 87.83$\pm$1.57 \\
+unlearn\\_lambda & cba & 1.0 & 64.84$\pm$22.54 & 6.88$\pm$2.30 & 88.37$\pm$0.82 \\
+unlearn\\_lambda & relation & 2.0 & 99.38$\pm$1.40 & 1.25$\pm$0.89 & 87.28$\pm$1.25 \\
+unlearn\\_lambda & uba & 2.0 & 98.59$\pm$2.37 & 2.34$\pm$2.07 & 86.41$\pm$0.77 \\
+unlearn\\_lambda & cba & 2.0 & 64.84$\pm$22.54 & 8.28$\pm$1.96 & 87.28$\pm$1.25 \\
+target\\_suppression & relation & 0.0 & 99.38$\pm$1.40 & 1.25$\pm$1.18 & 88.48$\pm$1.30 \\
+target\\_suppression & uba & 0.0 & 98.59$\pm$2.37 & 2.03$\pm$1.31 & 87.39$\pm$0.97 \\
+target\\_suppression & cba & 0.0 & 64.84$\pm$22.54 & 8.59$\pm$2.41 & 88.15$\pm$0.89 \\
+target\\_suppression & relation & 0.1 & 99.38$\pm$1.40 & 1.41$\pm$1.02 & 87.72$\pm$1.74 \\
+target\\_suppression & uba & 0.1 & 98.59$\pm$2.37 & 1.72$\pm$0.35 & 87.28$\pm$1.13 \\
+target\\_suppression & cba & 0.1 & 64.84$\pm$22.54 & 8.75$\pm$1.02 & 87.07$\pm$1.05 \\
+target\\_suppression & relation & 0.2 & 99.38$\pm$1.40 & 1.25$\pm$0.70 & 88.70$\pm$2.05 \\
+target\\_suppression & uba & 0.2 & 98.59$\pm$2.37 & 0.78$\pm$0.78 & 87.83$\pm$1.57 \\
+target\\_suppression & cba & 0.2 & 64.84$\pm$22.54 & 6.88$\pm$2.30 & 88.37$\pm$0.82 \\
+target\\_suppression & relation & 0.5 & 99.38$\pm$1.40 & 0.94$\pm$0.65 & 88.26$\pm$0.91 \\
+target\\_suppression & uba & 0.5 & 98.59$\pm$2.37 & 1.09$\pm$0.43 & 87.17$\pm$1.66 \\
+target\\_suppression & cba & 0.5 & 64.84$\pm$22.54 & 5.78$\pm$1.18 & 88.59$\pm$0.94 \\
+target\\_suppression & relation & 1.0 & 99.38$\pm$1.40 & 0.62$\pm$0.86 & 88.04$\pm$0.67 \\
+target\\_suppression & uba & 1.0 & 98.59$\pm$2.37 & 1.41$\pm$1.95 & 86.85$\pm$1.18 \\
+target\\_suppression & cba & 1.0 & 64.84$\pm$22.54 & 5.62$\pm$0.65 & 87.28$\pm$1.79 \\
+\bottomrule
+\end{tabular}
+\end{table*}

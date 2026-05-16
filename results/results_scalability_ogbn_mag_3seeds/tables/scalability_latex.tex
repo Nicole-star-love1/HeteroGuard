@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Scalability study on OGBN-MAG. Runtime and peak GPU memory are measured for the defense stage.}
+\label{tab:scalability_ogbn_mag}
+\begin{tabular}{lllrrrrr}
+\toprule
+Model & Attack & Defense & Nodes & Edges & Def. ASR & Def. Acc & Time(s) / GPU(MB) \\
+\midrule
+HeteroSAGE & relation & HeteroGuard-HR & 158740.0 & 1017630.7 & 0.00$\pm$0.00 & 27.25$\pm$1.58 & 13.8$\pm$5.9 / 2383.3$\pm$148.8 \\
+HeteroSAGE & relation & HeteroGuard-Unlearn & 158740.0 & 1017630.7 & 0.00$\pm$0.00 & 25.56$\pm$1.15 & 18.9$\pm$8.3 / 2638.0$\pm$84.0 \\
+HeteroSAGE & uba & HeteroGuard-HR & 158740.0 & 1017630.7 & 0.00$\pm$0.00 & 25.60$\pm$1.95 & 14.3$\pm$5.9 / 2154.7$\pm$106.4 \\
+HeteroSAGE & uba & HeteroGuard-Unlearn & 158740.0 & 1017630.7 & 0.00$\pm$0.00 & 21.98$\pm$1.39 & 19.8$\pm$8.2 / 3031.3$\pm$120.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
